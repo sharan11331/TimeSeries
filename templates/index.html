@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forecast App</title>
+</head>
+<body>
+    <h1>Forecast App</h1>
+    <form action="/result" method="post">
+        <label for="forecast_periods">Forecast Periods:</label>
+        <input type="text" id="forecast_periods" name="forecast_periods"><br><br>
+        <label for="model_choice">Choose Model:</label>
+        <select id="model_choice" name="model_choice">
+            <option value="ARIMA">ARIMA</option>
+            <option value="LSTM">LSTM</option>
+            <option value="Prophet">Prophet</option>
+        </select><br><br>
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+</html>
